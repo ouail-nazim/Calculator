@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+   
+     
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="calcu">
+            <header><b class="ml-1 mb-4">Calculator</b></header>
+            <input name="input" id="input" 
+            class="form-control mb-3" type="text" aria-label="readonly input example" readonly>
+            <div class="d-flex justify-content-between mt-2 mx-2">
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" id="clear" >C</button>
+                <button class="operation rounded-circle btn back text-white font-weight-bold px-3 py-3" onclick="operation('%','mod')">%</button>
+                <button class="operation rounded-circle btn back text-white font-weight-bold px-3 py-3" onclick="operation('^','puis')">^</button>
+                <button class="operation rounded-circle btn back text-white font-weight-bold px-3 py-3" onclick="operation('/','div')">/</button>
+            </div>
+            <div class="d-flex justify-content-between mt-2 mx-2">
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="7" onclick="numx(this.value)" >7</button>
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="8" onclick="numx(this.value)" >8</button>
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="9" onclick="numx(this.value)">9</button>
+                <button class=" operation rounded-circle btn back text-white font-weight-bold px-3 py-3" onclick="operation('*','mul')" >*</button>
+            </div>
+            <div class="d-flex justify-content-between mt-2 mx-2">
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="4" onclick="numx(this.value)" >4</button>
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="5" onclick="numx(this.value)" >5</button>
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="6" onclick="numx(this.value)">6</button>
+                <button class="operation rounded-circle btn back text-white font-weight-bold px-3 py-3" onclick="operation('-','sub')" >-</button>
+            </div>
+            <div class="d-flex justify-content-between mt-2 mx-2">
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="1" onclick="numx(this.value)" >1</button>
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="2" onclick="numx(this.value)" >2</button>
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="3" onclick="numx(this.value)">3</button>
+                <button class=" operation rounded-circle btn back text-white font-weight-bold px-3 py-3" onclick="operation('+','add')" >+</button>
+            </div>
+            <div class="d-flex justify-content-between mt-2 mx-2">
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="0" onclick="numx(this.value)" >0</button>
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="." onclick="numx(this.value)" >.</button>
+                <button class="number rounded-circle btn back text-white font-weight-bold px-3 py-3" value="3.14159265359" onclick="numx(this.value)" >Pi</button>
+                <button id='res' class="rounded-circle btn back text-white font-weight-bold px-3 py-3">=</button>
+                
+            </div>
+            <footer><i>made by nazim</i></footer>
+            
+        </div>  
+            
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
